@@ -38,10 +38,11 @@ int main(int argc, char *argv[]) {
         buffer[i] = c;
         ++i;
     }
+    buffer[i] = '\0';
 
     number_of_words = countwords(buffer);
 
-    printf("word count - &i\n", number_of_words);
+    printf("\nword count - %i\n", number_of_words);
 
     return(0);
 }
