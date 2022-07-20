@@ -1,0 +1,11 @@
+/* README for countingwords
+*     Create a large buffer of characters from the console, then count the
+*  number of words in the character buffer.
+*
+*  An example program from Kochan, Stephen G., "Programming in C 3rd ed.",
+*  Sams Publishing.
+*
+*  Programmer: Mark Crapser
+*
+*
+*/
