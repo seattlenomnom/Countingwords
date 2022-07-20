@@ -8,4 +8,7 @@
 *  Programmer: Mark Crapser
 *
 *
+*  const char string[] vs. char string[] ... what is the difference?
+*  I create a variable lenght string and pass it to countwords() which is
+*  expecting a const char string[]. What is going on?
 */
