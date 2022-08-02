@@ -16,16 +16,24 @@
  * Problem 1: lamb's is two words.
  * Solution 1: in isAlphabetic added || (c== '\'').
  *
- *
+ * problem 2: handling numbers (and their commas and periods)
+ * solution2: modded isalphabetic to look for special characters. added
+ * isspecialchar function. isspecialchar function looks for numbers(and ass-
+ * ociated commas and periods), and single apostrophes. next might implement
+ * isspecial character with a switch to clean upt the logic. if i do that, i
+ * should creat a git branch to experiment then merge the branch to main.
  *
 */
 
 
 #include <stdio.h>
 #include <stdbool.h>
+#include <ctype.h>
 
 bool isAlphabetic(const char c);
 int countwords(const char buffer[]);
+bool isSpecialChar(const char c);
+bool isNumber(const char c);
 
 int main(int argc, char *argv[]) {
 
@@ -61,7 +69,7 @@ bool isAlphabetic(const char c) {
 
     bool isAlpha;
 
-    if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '\'')
+    if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || isSpecialChar(c))
         isAlpha = true;
     else
         isAlpha = false;
@@ -89,4 +97,33 @@ int countwords(const char string[]) {
             looking_for_word = true;
 
     return(wordcount);
+}
+
+
+bool isSpecialChar(const char c) {
+
+
+    bool isSpecial;
+
+
+    if((c == '\'') || (isNumber(c)) || (c == '.') || (c == ','))
+        isSpecial = true;
+    else
+        isSpecial = false;
+
+
+    return(isSpecial);
+}
+
+
+bool isNumber(const char c) {
+
+    bool number;
+
+    if(isdigit(c) != 0)
+        number = true;
+    else
+        number = false;
+
+    return(number);
 }

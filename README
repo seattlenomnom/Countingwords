@@ -17,4 +17,12 @@
 *  230.
 * Problem 1: lamb's is two words.
 * Solution 1: in isAlphabetic added (c== '\'').
+*
+* problem 2: handling numbers (and their commas and periods)
+* solution2: modded isalphabetic to look for special characters. added
+* isspecialchar function. isspecialchar function looks for numbers(and ass-
+* ociated commas and periods), and single apostrophes. next might implement
+* isspecial character with a switch to clean upt the logic. if i do that, i
+* should creat a git branch to experiment then merge the branch to main.
 */
+
