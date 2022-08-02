@@ -14,6 +14,9 @@
  * push to origin.
  *
  * Problem 1: lamb's is two words.
+ * Solution 1: in isAlphabetic added || (c== '\'').
+ *
+ *
  *
 */
 
@@ -58,7 +61,7 @@ bool isAlphabetic(const char c) {
 
     bool isAlpha;
 
-    if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+    if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || c == '\'')
         isAlpha = true;
     else
         isAlpha = false;

@@ -16,4 +16,5 @@
 *     "Finished" countingwords example, now proceding with problem 3 on page
 *  230.
 * Problem 1: lamb's is two words.
+* Solution 1: in isAlphabetic added (c== '\'').
 */
