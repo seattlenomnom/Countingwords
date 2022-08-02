@@ -11,4 +11,9 @@
 *  const char string[] vs. char string[] ... what is the difference?
 *  I create a variable lenght string and pass it to countwords() which is
 *  expecting a const char string[]. What is going on?
+*
+*  08/01/2022
+*     "Finished" countingwords example, now proceding with problem 3 on page
+*  230.
+* Problem 1: lamb's is two words.
 */

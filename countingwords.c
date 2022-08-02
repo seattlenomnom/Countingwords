@@ -8,6 +8,13 @@
  *
  * Programmer: Mark Crapser
  *
+ * 08/01/2022 countingwords is "finished" as the example program.
+ * Next is problem 2 on page 230. I wants to fix two problems. How do I
+ * approach this with git and github. Use local git to fix the problems, then
+ * push to origin.
+ *
+ * Problem 1: lamb's is two words.
+ *
 */
 
 
